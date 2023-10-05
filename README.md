@@ -1,32 +1,38 @@
 # CS411-Team32-Project
 
-Topic:
+## Dress Code Recommendation Based on Weather
 
-Dress code recommendation based on weather
-The primary objective of this application is to simplify and enhance the daily clothing selection process by offering users personalized dress code recommendations that align with current weather conditions. The users just need to edit the profiles that provide us with their preferred dressing style and our App will take the weather condition data as the input to generate outfit suggestions to help users make decisions. Users can also share outfit ideas and fashion tips with others on our platform. 
+### Introduction
 
-Data Set: 
-Weather:
-https://www.noaa.gov/weather
-https://www.tomorrow.io/weather-api/ (Weather API)
+The primary objective of this application is to simplify and enhance the daily clothing selection process by offering users personalized dress code recommendations that align with current weather conditions. Users can simply edit their profiles to provide us with their preferred dressing style, and our app will use weather condition data as input to generate outfit suggestions, helping users make informed decisions. Additionally, users can share outfit ideas and fashion tips with others on our platform.
 
-Dress Code:
-https://github.com/aimagelab/dress-code
-https://github.com/dprutha/Clothing-Recommendation-Based-on-Weather
+### Data Sources
 
-Implement Example:
-https://medium.com/@sajjadheydari74/building-an-assistant-to-suggest-dress-code-based-on-the-weather-7d4c9097b5a0
+- Weather Data:
+  - [NOAA Weather](https://www.noaa.gov/weather)
+  - [Tomorrow.io Weather API](https://www.tomorrow.io/weather-api/)
 
+- Dress Code Information:
+  - [Dress Code Dataset](https://github.com/aimagelab/dress-code)
+  - [Clothing Recommendation Based on Weather](https://github.com/dprutha/Clothing-Recommendation-Based-on-Weather)
 
-A Personalized Recipe Recommendation System
-The proposal of our application is a personalized recipe recommendation system. Users type or choose(input) their daily food preferences, available ingredients, and desired calorie intake for a meal. Their profile might also include specific dietary restrictions (such as allergies) set during sign-up, and this information is stored in the database of each user. Our recommendation of recipes could also related to seasonal food availability, local climate, or events that might influence food choice. The application also uses third-party authentication like WeChat, Twitter, or Facebook, in order to correlate users' preferences with at least two publicly available datasets via the Internet to produce a unique recipe suggestion. 
+### Implementation Example
 
-DataSets：
-食谱：
-https://www.yummly.com
+For an example of how this system can be implemented, please refer to this article: [Building an Assistant to Suggest Dress Code Based on the Weather](https://medium.com/@sajjadheydari74/building-an-assistant-to-suggest-dress-code-based-on-the-weather-7d4c9097b5a0).
 
-食物成分和营养，可以download：
-https://fdc.nal.usda.gov
+## Personalized Recipe Recommendation System
 
-食谱，也有营养分析，有API demo：
-https://www.edamam.com
+### Introduction
+
+Our application proposal revolves around a personalized recipe recommendation system. Users can input their daily food preferences, available ingredients, and desired calorie intake for a meal. User profiles may also include specific dietary restrictions (such as allergies) set during sign-up, stored in the user database. Recipe recommendations take into consideration factors such as seasonal food availability, local climate, or events that might influence food choice. Additionally, the application utilizes third-party authentication (e.g., WeChat, Twitter, or Facebook) to correlate users' preferences with at least two publicly available datasets via the internet to produce unique recipe suggestions.
+
+### Data Sources
+
+- Recipes:
+  - [Yummly](https://www.yummly.com)
+
+- Food Ingredients and Nutrition Data (Downloadable):
+  - [USDA Food Data Central](https://fdc.nal.usda.gov)
+
+- Recipes with Nutrition Analysis and API Demo:
+  - [Edamam](https://www.edamam.com)
