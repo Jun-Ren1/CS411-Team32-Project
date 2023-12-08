@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personalized Recipe Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="Login/signup.php">SIGN UP</a></li>
+                    <li><a href="Login/login.php">LOG IN</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row">
+           <div class="col">
+                <h1>Your Personalized Recipe Recommendation</h1>
+                <p>Tell us food ingradient, favorite cuisines, or any preference!</p>
+                <button type="button" onclick="goToPage('recipe/index.html')"> Recipe Finder</button>
+           </div>
+
+            <div class="col">
+                <div class="card card1" onclick="goToPage('bmi/bmi.html')">
+                    <h3>Weight Management</h3> 
+                    <p>BMI calculator with health tips</p>
+                </div>
+                <div class="card card2" onclick="goToPage('news/index.html')">
+                    <h3>Health News</h3>
+                    <p>Get to know recent health news</p>
+                </div>
+                <div class="card card3" onclick="goToPage('copenhagen/copenhagen.html')">
+                    <p>Copenhagen Diet<p>
+                </div>
+                <div class="card card4" onclick="goToPage('harvard/harvardsoup.html')">
+                    <p>Harvard Vegetable Soup</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

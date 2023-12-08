@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator with Health Tips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="calculator">
+    <div id="calculate-bmi">
+        <h2>BMI Calculator</h2>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter your weight" required>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter your height" required>
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <div id="result"></div>
+        <div id="output"></div>
+    </div>
+
+    <div id="bmi-categories">
+        <h4>BMI Categories</h4>
+        <p style="margin-bottom: 0; font-weight: normal;">     Underweight = &lt;18.5</p>
+        <p style="margin-bottom: 0; font-weight: normal;">     Normal weight = 18.5–24.9</p>
+        <p style="margin-bottom: 0; font-weight: normal;">     Overweight = 25–29.9</p>
+        <p style="margin-bottom: 0; font-weight: normal;">     Obesity = 30 or greater</p>
+    </div>
+</div>
+
+<div id="tips">
+    <h2>Weight Management Tips</h2>
+
+    <h3>For Weight Loss </h3>
+    <table>
+        <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Controlled Diet</td>
+            <td>Ensure calorie intake is less than calorie expenditure. Avoid high-calorie foods.</td>
+            <td>Monitor portion sizes.</td>
+        </tr>
+        <tr>
+            <td>Increased Exercise</td>
+            <td>Engage in at least 150 minutes of moderate-intensity aerobic exercise per week.</td>
+            <td>Include activities like brisk walking, jogging, or swimming.</td>
+        </tr>
+        <tr>
+            <td>Adequate Hydration</td>
+            <td>Drink enough water to control appetite and maintain hydration.</td>
+            <td>Consider water-rich foods like fruits and vegetables.</td>
+        </tr>
+    </table>
+
+    <h3>For Weight Gain </h3>
+    <table>
+        <tr>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Increased Caloric Intake</td>
+            <td>Consume high-calorie but healthy foods like nuts, avocados, and olive oil.</td>
+            <td>Focus on nutrient-dense options.</td>
+        </tr>
+        <tr>
+            <td>High Protein Diet</td>
+            <td>Ensure sufficient protein intake to promote muscle growth. Include chicken breast, fish, and legumes.</td>
+            <td>Consult with a nutritionist for personalized recommendations.</td>
+        </tr>
+        <tr>
+            <td>Muscle Training</td>
+            <td>Engage in weight training exercises to build muscle while gaining weight.</td>
+            <td>Work with a fitness professional for proper guidance.</td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    function calculateBMI() {
+        var weight = parseFloat(document.getElementById("weight").value);
+        var height = parseFloat(document.getElementById("height").value);
+
+        if (!isNaN(weight) && !isNaN(height) && height > 0 && weight > 0) {
+            var bmi = weight / Math.pow(height / 100, 2);
+            document.getElementById("result").innerHTML = "Your BMI is: " + bmi.toFixed(2);
+            document.getElementById("output").innerHTML = getBMICategory(bmi);
+        } else {
+            document.getElementById("result").innerHTML = "Please enter valid weight and height.";
+            document.getElementById("output").innerHTML = "";
+        }
+    }
+
+    function getBMICategory(bmi) {
+        if (bmi < 18.5) {
+            return "Underweight";
+        } else if (bmi < 24.9) {
+            return "Normal weight";
+        } else if (bmi < 29.9) {
+            return "Overweight";
+        } else {
+            return "Obese";
+        }
+    }
+</script>
+
+</body>
+</html>
