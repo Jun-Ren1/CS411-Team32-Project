@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>Recipe Finder</h2>
+    <img src="image/search.svg" alt="Search"/>
+  </header>
+  <section class="container">
+      <div id="loading"></div>
+    <div class="search">
+      <input id="txtSearch" type="text" placeholder="Search Favorite" autofocus/>
+      <select id="calorieRange">
+        <option value="0-1000000">N/A</option>
+        <option value="0-300">0-300 kcal</option>
+        <option value="300-600">300-600 kcal</option>
+        <option value="600-900">600-900 kcal</option>
+        <option value="900-1200">900-1200 kcal</option>
+        <option value="1200-1500">1200-1500 kcal</option>
+        <option value="1500-2000">1500-2000 kcal</option>
+        <option value="2000-3000">2000-3000 kcal</option>
+      </select>
+      <button class="btn">Find</button>
+    </div>
+    <div id="recipe-container"></div>
+  </section>
+</body>
+</html>

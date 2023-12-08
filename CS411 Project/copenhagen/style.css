@@ -1,0 +1,61 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px 0;
+}
+
+#introduction, #copenhagen-diet, #pros-cons, #meal-plan {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.copenhagen-diet-plan {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    margin-top: 20px;
+}
